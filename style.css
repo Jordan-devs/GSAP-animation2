@@ -1,0 +1,103 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #d6deff;
+}
+
+.demo {
+  width: 400px;
+  height: 400px;
+  background: #d6deff;
+}
+
+.hermanWrapper {
+  width: 100%;
+  height: 305px;
+  /* 	border:2px solid red;   */
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.herman {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  left: 150px;
+}
+
+.hole {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  left: 125px;
+  top: 290px;
+}
+
+.shadow {
+  opacity: 0;
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 125px;
+  top: 290px;
+  background: radial-gradient(rgb(100, 100, 100, 0.6), rgb(0, 0, 0, 0) 75%);
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+}
+
+.nav button {
+  background: #ef9103;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 1rem;
+  margin-inline: 10px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@media all and (max-width: 600px) {
+  .demo {
+    width: 100%;
+  }
+
+  .herman {
+    left: 130px;
+  }
+
+  .hole {
+    left: 105px;
+  }
+
+  .shadow {
+    left: 105px;
+  }
+
+  .hermanWrapper {
+    border-radius: 0%;
+  }
+}
